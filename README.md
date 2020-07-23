@@ -1,5 +1,5 @@
 # java-calculator
-A calculator developed in java.
+A calculator developed in java and css.
 
 The purpose of this project is to expand the functionality of a common calculator.
 
