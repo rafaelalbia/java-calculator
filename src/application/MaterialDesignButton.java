@@ -1,13 +1,16 @@
 package application;
 
+// Imports
 import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
+// Ripple effect
 public class MaterialDesignButton extends Button {
 	
+	// Ripple effect variables
 	private Circle circleRipple;
 	private Rectangle rippleClip = new Rectangle();
 	private Duration rippleDuration = new Duration(250);
