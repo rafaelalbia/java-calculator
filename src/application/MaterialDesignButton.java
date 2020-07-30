@@ -19,5 +19,9 @@ public class MaterialDesignButton extends Button {
 		super(text);
 		
 		getStyleClass().addAll("md-button");
+		
+		createRippleEffect();
 	}
+	
+	
 }
