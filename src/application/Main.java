@@ -8,9 +8,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    @Override
     
     // Stage and scene parameters
+    @Override
     public void start(Stage primaryStage) {
     	
     	// The program will try to execute, the exception type will be printed if diagnosed
