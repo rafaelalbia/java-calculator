@@ -1,5 +1,7 @@
 package application;
 
+import org.w3c.dom.events.Event;
+
 import com.sun.javafx.scene.control.skin.ButtonSkin;
 import javafx.animation.FadeTransition;
 import javafx.animation.Interpolator;
@@ -7,6 +9,7 @@ import javafx.animation.SequentialTransition;
 import javafx.animation.Timeline;
 import javafx.scene.control.Button;
 import javafx.scene.control.Skin;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
@@ -66,6 +69,14 @@ public class MaterialDesignButton extends Button {
 			circleRipple.setRadius(0.1);
 		});
 		
-		
+		this.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
+			parallelTransition.stop();
+			parallelTransition.getOnFinished().handle(null);
+			
+			circleRipple.setCenterX(event.getX());
+			circleRipple.setCenterY(event.getY());
+			
+			// 
+		});
 	}
 }
