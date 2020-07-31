@@ -5,6 +5,8 @@ import org.w3c.dom.events.Event;
 import com.sun.javafx.scene.control.skin.ButtonSkin;
 import javafx.animation.FadeTransition;
 import javafx.animation.Interpolator;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
 import javafx.animation.SequentialTransition;
 import javafx.animation.Timeline;
 import javafx.scene.control.Button;
@@ -91,7 +93,20 @@ public class MaterialDesignButton extends Button {
 				} catch (Exception e) {
 					
 				}
+				
+				// Getting 45% of longest button's length, because we want edge of ripple effect always visible
+				double circleRippleRadius = Math.max(getHeight(), getWidth()) * 0.45;
+				final KeyValue keyValue = new KeyValue(circleRipple.radiusProperty(), circleRippleRadius, Interpolator.EASE_OUT);
+				final KeyFrame keyFrame = new KeyFrame(rippleDuration, keyValue);
+				scaleRippleTimeline.getKeyFrames().clear();
+				scaleRippleTimeline.getKeyFrames().add(keyFrame);
 			}
+			
+			parallelTransition.playFromStart();
 		});
+	}
+	
+	public void RippleColor(Color color) {
+		circleRipple.setFill(color);
 	}
 }
