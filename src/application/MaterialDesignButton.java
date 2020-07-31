@@ -76,7 +76,22 @@ public class MaterialDesignButton extends Button {
 			circleRipple.setCenterX(event.getX());
 			circleRipple.setCenterY(event.getY());
 			
-			// 
+			// Recalculate ripple size if size of button from time was changed
+			if (getWidth() != lastRippleWidth || getHeight() != lastRippleHeight) {
+				lastRippleWidth = getWidth();
+				lastRippleHeight = getHeight();
+				
+				rippleClip.setWidth(lastRippleWidth);
+				rippleClip.setHeight(lastRippleHeight);
+				
+				try {
+					rippleClip.setArcWidth(this.getBackground().getFills().get(0).getRadii().getTopLeftHorizontalRadius());
+					rippleClip.setArcHeight(this.getBackground().getFills().get(0).getRadii().getTopLeftHorizontalRadius());
+					circleRipple.setClip(rippleClip);
+				} catch (Exception e) {
+					
+				}
+			}
 		});
 	}
 }
