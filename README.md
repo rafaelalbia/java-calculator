@@ -1,6 +1,14 @@
-# java_calculator
-A calculator developed in java and css.
+## Getting Started
 
-The purpose of this project is to expand the functionality of a common calculator.
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-- "Initial import" is just a start import. At the moment only the front end is developed.
+## Folder Structure
+
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+## Dependency Management
+
+The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
