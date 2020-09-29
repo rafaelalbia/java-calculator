@@ -14,6 +14,7 @@ public class MainStart extends Application {
             FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("MainFrame.fxml"));
             Parent root = (Parent) fxmlloader.load();
             Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("Application.css").toExternalForm());
 
             primaryStage.setTitle("Java Calculator");
             primaryStage.setScene(scene);
