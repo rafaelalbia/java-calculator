@@ -3,9 +3,9 @@
 }
 
 #screen {
-   -fx-background-color: rgba(75, 145, 110, 0.7);
-   -fx-border-width: 1px;
-   -fx-border-color: rgba(75, 145, 110, 1)
+    -fx-background-color: rgba(75, 145, 110, 0.7);
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(75, 145, 110, 1)
 }
 
 #keys {
@@ -17,12 +17,13 @@
     -fx-background-color: rgba(0, 0, 0, 0);
     -fx-min-width: 68px;
     -fx-min-height: 61px;
+    -fx-font-size: 14px;
 }
 
 #equal {
     -fx-min-width: 135px;
 }
 
-.button #hover {
+.button:hover {
     -fx-background-color: rgb(100, 161, 131);
 }
