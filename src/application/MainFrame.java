@@ -12,6 +12,9 @@ import javafx.scene.layout.Pane;
 
 public class MainFrame {
 
+    Float data = 0f;
+    int operation = -1;
+
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
 
@@ -64,6 +67,55 @@ public class MainFrame {
         }
         else if(event.getSource() == nine) {
             screen.setText(screen.getText() + "9");
+        }
+        else if(event.getSource() == clear) {
+            screen.setText("");
+        }
+        else if(event.getSource() == addition) {
+            data = Float.parseFloat(screen.getText());
+            operation = 1; // Addition
+            screen.setText("");
+        }
+        else if(event.getSource() == subtraction) {
+            data = Float.parseFloat(screen.getText());
+            operation = 2; // Subtraction
+            screen.setText("");
+        }
+        else if(event.getSource() == multiplication) {
+            data = Float.parseFloat(screen.getText());
+            operation = 3; // Multiplication
+            screen.setText("");
+        }
+        else if(event.getSource() == division) {
+            data = Float.parseFloat(screen.getText());
+            operation = 4; // Division
+            screen.setText("");
+        }
+        else if(event.getSource() == equal) {
+            Float secondOperand = Float.parseFloat(screen.getText());
+            switch(operation) {
+                case 1: // Addition
+                    Float answer = data + secondOperand;
+                    screen.setText(String.valueOf(answer));
+                    break;
+                case 2: // Subtraction
+                    answer = data - secondOperand;
+                    screen.setText(String.valueOf(answer));
+                    break;
+                case 3: // Multiplication
+                    answer = data * secondOperand;
+                    screen.setText(String.valueOf(answer));
+                    break;
+                case 4: // Division
+                    answer = 0f;
+                    try {
+                        answer = data / secondOperand;
+                    } catch (Exception exception) {
+                        screen.setText("Error");
+                    }
+                    screen.setText(String.valueOf(answer));
+                    break;
+            }
         }
     }
     @FXML // This method is called by the FXMLLoader when initialization is complete

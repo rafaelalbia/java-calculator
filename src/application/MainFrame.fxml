@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainFrame">
    <children>
-      <Label fx:id="screen" alignment="CENTER_RIGHT" maxHeight="137.0" maxWidth="350.0" minHeight="110.0" minWidth="320.0" prefHeight="134.0" prefWidth="350.0" text="Label">
+      <Label fx:id="screen" alignment="CENTER_RIGHT" maxHeight="137.0" maxWidth="350.0" minHeight="110.0" minWidth="320.0" prefHeight="134.0" prefWidth="350.0" text="">
          <padding>
             <Insets left="10.0" right="10.0" />
          </padding>
