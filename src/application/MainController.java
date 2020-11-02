@@ -10,7 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 
-public class MainFrame {
+public class MainController {
 
     Float data = 0f;
     int operation = -1;
