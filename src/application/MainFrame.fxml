@@ -19,25 +19,25 @@
       </Label>
       <Pane fx:id="keys" layoutX="5.0" layoutY="139.0" prefHeight="245.0" prefWidth="340.0">
          <children>
-            <Button fx:id="seven" mnemonicParsing="false" text="7" />
-            <Button fx:id="eight" layoutX="68.0" mnemonicParsing="false" text="8" />
-            <Button fx:id="nine" layoutX="136.0" mnemonicParsing="false" text="9" />
-            <Button fx:id="division" layoutX="204.0" mnemonicParsing="false" text="/" />
-            <Button fx:id="backstep" layoutX="272.0" mnemonicParsing="false" text="&lt;-" />
-            <Button fx:id="four" layoutY="61.0" mnemonicParsing="false" text="4" />
-            <Button fx:id="five" layoutX="68.0" layoutY="61.0" mnemonicParsing="false" text="5" />
-            <Button fx:id="six" layoutX="136.0" layoutY="61.0" mnemonicParsing="false" text="6" />
-            <Button fx:id="multiplication" layoutX="204.0" layoutY="61.0" mnemonicParsing="false" text="*" />
-            <Button fx:id="clear" layoutX="272.0" layoutY="61.0" mnemonicParsing="false" text="C" />
-            <Button fx:id="one" layoutY="122.0" mnemonicParsing="false" text="1" />
-            <Button fx:id="two" layoutX="68.0" layoutY="122.0" mnemonicParsing="false" text="2" />
-            <Button fx:id="three" layoutX="136.0" layoutY="122.0" mnemonicParsing="false" text="3" />
-            <Button fx:id="subtraction" layoutX="204.0" layoutY="122.0" mnemonicParsing="false" text="-" />
-            <Button fx:id="addition" layoutX="272.0" layoutY="122.0" mnemonicParsing="false" text="+" />
-            <Button fx:id="zero" layoutY="183.0" mnemonicParsing="false" text="0" />
-            <Button fx:id="dot" layoutX="68.0" layoutY="183.0" mnemonicParsing="false" text="." />
-            <Button fx:id="percent" layoutX="136.0" layoutY="183.0" mnemonicParsing="false" text="\%" />
-            <Button fx:id="equal" layoutX="204.0" layoutY="183.0" mnemonicParsing="false" text="=" />
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#handleButtonAction" text="7" />
+            <Button fx:id="eight" layoutX="68.0" mnemonicParsing="false" onAction="#handleButtonAction" text="8" />
+            <Button fx:id="nine" layoutX="136.0" mnemonicParsing="false" onAction="#handleButtonAction" text="9" />
+            <Button fx:id="division" layoutX="204.0" mnemonicParsing="false" onAction="#handleButtonAction" text="/" />
+            <Button fx:id="backstep" layoutX="272.0" mnemonicParsing="false" onAction="#handleButtonAction" text="&lt;-" />
+            <Button fx:id="four" layoutY="61.0" mnemonicParsing="false" onAction="#handleButtonAction" text="4" />
+            <Button fx:id="five" layoutX="68.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleButtonAction" text="5" />
+            <Button fx:id="six" layoutX="136.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleButtonAction" text="6" />
+            <Button fx:id="multiplication" layoutX="204.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleButtonAction" text="*" />
+            <Button fx:id="clear" layoutX="272.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleButtonAction" text="C" />
+            <Button fx:id="one" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" text="1" />
+            <Button fx:id="two" layoutX="68.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" text="2" />
+            <Button fx:id="three" layoutX="136.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" text="3" />
+            <Button fx:id="subtraction" layoutX="204.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" text="-" />
+            <Button fx:id="addition" layoutX="272.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleButtonAction" text="+" />
+            <Button fx:id="zero" layoutY="183.0" mnemonicParsing="false" onAction="#handleButtonAction" text="0" />
+            <Button fx:id="dot" layoutX="68.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleButtonAction" text="." />
+            <Button fx:id="percent" layoutX="136.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleButtonAction" text="\%" />
+            <Button fx:id="equal" layoutX="204.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleButtonAction" text="=" />
          </children></Pane>
    </children>
 </AnchorPane>
