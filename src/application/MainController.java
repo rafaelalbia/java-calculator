@@ -71,6 +71,12 @@ public class MainController {
         else if(event.getSource() == clear) {
             screen.setText("");
         }
+        else if(event.getSource() == backstep) {
+            String digits = String.valueOf(screen.getText());
+            int lastIndex = digits.length() - 1;
+            digits = digits.replaceFirst(String.valueOf(digits.charAt(lastIndex)), "");
+            screen.setText(digits);
+        }
         else if(event.getSource() == addition) {
             data = Float.parseFloat(screen.getText());
             operation = 1; // Addition
@@ -96,15 +102,30 @@ public class MainController {
             switch(operation) {
                 case 1: // Addition
                     Float answer = data + secondOperand;
-                    screen.setText(String.valueOf(answer));
+                    if (answer == answer.intValue()) { // Verify if the answer is int
+                        screen.setText(String.valueOf(answer.intValue()));
+                    }
+                    else {
+                        screen.setText(String.valueOf(answer));
+                    }
                     break;
                 case 2: // Subtraction
                     answer = data - secondOperand;
-                    screen.setText(String.valueOf(answer));
+                    if (answer == answer.intValue()) {
+                        screen.setText(String.valueOf(answer.intValue()));
+                    }
+                    else {
+                        screen.setText(String.valueOf(answer));
+                    }
                     break;
                 case 3: // Multiplication
                     answer = data * secondOperand;
-                    screen.setText(String.valueOf(answer));
+                    if (answer == answer.intValue()) {
+                        screen.setText(String.valueOf(answer.intValue()));
+                    }
+                    else {
+                        screen.setText(String.valueOf(answer));
+                    }
                     break;
                 case 4: // Division
                     answer = 0f;
@@ -113,7 +134,12 @@ public class MainController {
                     } catch (Exception exception) {
                         screen.setText("Error");
                     }
-                    screen.setText(String.valueOf(answer));
+                    if (answer == answer.intValue()) {
+                        screen.setText(String.valueOf(answer.intValue()));
+                    }
+                    else {
+                        screen.setText(String.valueOf(answer));
+                    }
                     break;
             }
         }
