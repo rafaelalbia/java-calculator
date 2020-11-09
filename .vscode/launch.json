@@ -9,14 +9,14 @@
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path /home/rafaelalbia/Documents/java_calculator/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path /home/rafaelalbia/Documents/Workspace/java_calculator/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Main<java_calculator_4031fb76>",
+            "name": "Debug (Launch)-Main<java_calculator_9acf211c>",
             "request": "launch",
             "mainClass": "application.Main",
-            "projectName": "java_calculator_4031fb76"
+            "projectName": "java_calculator_9acf211c"
         }
     ]
 }
