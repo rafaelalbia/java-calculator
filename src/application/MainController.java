@@ -107,8 +107,6 @@ public class MainController {
             switch(operation) {
                 case 1:
                     data = 0f;
-                    Float previousAnswer = Float.parseFloat(screen.getText());
-                    System.out.println(previousAnswer);
                 case 2: // Addition
                     Float answer = data + secondOperand;
                     if (answer == answer.intValue()) { // Verify if the answer is int
