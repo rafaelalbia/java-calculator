@@ -18,7 +18,7 @@
     -fx-min-width: 68px;
     -fx-min-height: 61px;
     -fx-font-size: 14px;
-    -fx-font-width: bold;
+    -fx-font-weight: bold;
 }
 
 #equal {

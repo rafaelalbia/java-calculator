@@ -12,7 +12,7 @@ import javafx.scene.layout.Pane;
 
 public class MainController {
 
-    Float data = 0f;
+    Float previousValue = 0f;
     int operation = 1;
 
     @FXML // ResourceBundle that was given to the FXMLLoader
@@ -78,93 +78,94 @@ public class MainController {
             screen.setText(digits);
         }
         else if(event.getSource() == addition) {
-            data = Float.parseFloat(screen.getText());
+            previousValue = Float.parseFloat(screen.getText());
             operation = 2; // Addition
             screen.setText("");
         }
         else if(event.getSource() == subtraction) {
-            data = Float.parseFloat(screen.getText());
+            previousValue = Float.parseFloat(screen.getText());
             operation = 3; // Subtraction
             screen.setText("");
         }
         else if(event.getSource() == multiplication) {
-            data = Float.parseFloat(screen.getText());
+            previousValue = Float.parseFloat(screen.getText());
             operation = 4; // Multiplication
             screen.setText("");
         }
         else if(event.getSource() == division) {
-            data = Float.parseFloat(screen.getText());
+            previousValue = Float.parseFloat(screen.getText());
             operation = 5; // Division
             screen.setText("");
         }
         else if(event.getSource() == percent) {
-            data = Float.parseFloat(screen.getText());
+            previousValue = Float.parseFloat(screen.getText());
             operation = 6; // Percentage
             screen.setText("");
         }
         else if(event.getSource() == equal) {
-            Float secondOperand = Float.parseFloat(screen.getText());
+            Float currentValue = Float.parseFloat(screen.getText());
             switch(operation) {
                 case 1:
-                    data = 0f;
+                    previousValue = 0f;
                 case 2: // Addition
-                    Float answer = data + secondOperand;
-                    if (answer == answer.intValue()) { // Verify if the answer is int
-                        screen.setText(String.valueOf(answer.intValue()));
-                    }
-                    else {
-                        screen.setText(String.valueOf(answer));
-                    }
-                    operation = 1;
+                    addition(previousValue, currentValue);
                     break;
                 case 3: // Subtraction
-                    answer = data - secondOperand;
-                    if (answer == answer.intValue()) {
-                        screen.setText(String.valueOf(answer.intValue()));
-                    }
-                    else {
-                        screen.setText(String.valueOf(answer));
-                    }
-                    operation = 1;
+                    subtraction(previousValue, currentValue);
                     break;
                 case 4: // Multiplication
-                    answer = data * secondOperand;
-                    if (answer == answer.intValue()) {
-                        screen.setText(String.valueOf(answer.intValue()));
-                    }
-                    else {
-                        screen.setText(String.valueOf(answer));
-                    }
-                    operation = 1;
+                    multiplication(previousValue, currentValue);
                     break;
                 case 5: // Division
-                    answer = 0f;
-                    try {
-                        answer = data / secondOperand;
-                    } catch (Exception exception) {
-                        screen.setText("Error");
-                    }
-                    if (answer == answer.intValue()) {
-                        screen.setText(String.valueOf(answer.intValue()));
-                    }
-                    else {
-                        screen.setText(String.valueOf(answer));
-                    }
-                    operation = 1;
+                    division(previousValue, currentValue);
                     break;
                 case 6:
-                    answer = (data * secondOperand) / 100;
-                    if (answer == answer.intValue()) {
-                        screen.setText(String.valueOf(answer.intValue()));
-                    }
-                    else {
-                        screen.setText(String.valueOf(answer));
-                    }
-                    operation = 1;
+                    percentage(previousValue, currentValue);
                     break;
             }
         }
     }
+    
+    private void verificationValue(Float answerVerification) {
+        if (answerVerification == answerVerification.intValue()) {
+            screen.setText(String.valueOf(answerVerification.intValue()));
+        }
+        else {
+            screen.setText(String.valueOf(answerVerification));
+        }
+        operation = 1;
+    }
+
+    private void addition(Float firstOperand, Float secondOperand) {
+        Float answer = firstOperand + secondOperand;
+        verificationValue(answer);
+    }
+
+    private void subtraction(Float firstOperand, Float secondOperand) {
+        Float answer = firstOperand - secondOperand;
+        verificationValue(answer);
+    }
+
+    private void multiplication(Float firstOperand, Float secondOperand) {
+        Float answer = firstOperand * secondOperand;
+        verificationValue(answer);
+    }
+
+    private void division(Float firstOperand, Float secondOperand) {
+        Float answer = 0f;
+        try {
+            answer = firstOperand / secondOperand;
+        } catch (Exception exception) {
+            screen.setText("Error");
+        }
+        verificationValue(answer);
+    }
+
+    private void percentage(Float firstOperand, Float secondOperand) {
+        Float answer = (firstOperand * secondOperand) / 100;
+        verificationValue(answer);
+    }
+
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
 
