@@ -68,6 +68,9 @@ public class MainController {
         else if(event.getSource() == nine) {
             screen.setText(screen.getText() + "9");
         }
+        else if(event.getSource() == dot) {
+            screen.setText(screen.getText() + ".");
+        }
         else if(event.getSource() == clear) {
             screen.setText("");
         }
