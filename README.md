@@ -5,6 +5,32 @@ A calculator developed with the intent of being powerful, practical and with a m
 In the near future new features will be added!
 
 <h2>Features</h2>
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+
 aaaaaaaaaaaa
 a
 a
