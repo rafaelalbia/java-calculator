@@ -1,11 +1,11 @@
 <h1>Java Calculator</h1>
 
 <img src="https://img.shields.io/badge/Java-Version%2011.0.9-orange">
-<img src="/codacy/grade/:projectId">
-<img src="https://img.shields.io/badge/snyk/vulnerabilities/npm/:packageName">
-<img src="https://img.shields.io/badge/symfony/i/grade/:projectUuid">
-<img src="https://img.shields.io/badge/eclipse-marketplace/last-update/:name">
-<img src="https://img.shields.io/badge/steam/views/:fileId">
+<img src="https://img.shields.io/badge/JavaFx-Version%2011.0.2-green">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
 
 <h2>Description</h2>
 
