@@ -1,6 +1,6 @@
 <h1>Java Calculator</h1>
 
-<img src="https://img.shields.io/badge/Java-Version%2011.0.9-orange">
+<img src="https://img.shields.io/badge/Java-Version%2011.0.9-orange">\n
 <img src="https://img.shields.io/badge/JavaFx-Version%2011.0.2-green">
 <img src="">
 <img src="">
