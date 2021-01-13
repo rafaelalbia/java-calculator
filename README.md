@@ -7,6 +7,49 @@ In the near future new features will be added!
 <h2>Features</h2>
 
 Projects
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
+Projects
+Snake Game
+Java Calculator
+Contact
+GmailOutlookFacebookLinkedin
+
 Snake Game
 Java Calculator
 Contact
