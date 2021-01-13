@@ -16,7 +16,16 @@ a
 a
 a
 a
-a
+a<br><br>
+In the near future new features will be added!
+
+<h2>Features</h2>
+aaaaaaaaaaaa<br><br>
+In the near future new features will be added!
+
+<h2>Features</h2>
+aaaaaaaaaaaa
+
 a
 a
 as
