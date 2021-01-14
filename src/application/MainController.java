@@ -69,62 +69,94 @@ public class MainController {
             screen.setText(screen.getText() + "9");
         }
         else if(event.getSource() == dot) {
-            screen.setText(screen.getText() + ".");
+            if (screen.getText() == "" || screen.getText().indexOf(".") != -1) {
+                ;
+            } else {
+                screen.setText(screen.getText() + ".");
+            }
         }
         else if(event.getSource() == clear) {
             screen.setText("");
         }
         else if(event.getSource() == backstep) {
-            String digits = String.valueOf(screen.getText());
-            int lastIndex = digits.length() - 1;
-            digits = digits.replaceFirst(String.valueOf(digits.charAt(lastIndex)), "");
-            screen.setText(digits);
+            if (screen.getText() == "" || screen.getText().length() == 0)  {
+                ;
+            } else {
+                String digits = String.valueOf(screen.getText());
+                int lastIndex = digits.length() - 1;
+                digits = digits.replaceFirst(String.valueOf(digits.charAt(lastIndex)), "");
+                screen.setText(digits);
+            }
         }
         else if(event.getSource() == addition) {
-            previousValue = Float.parseFloat(screen.getText());
-            operation = 2; // Addition
-            screen.setText("");
+            if (screen.getText() == "") {
+                ;
+            } else {
+                previousValue = Float.parseFloat(screen.getText());
+                operation = 2; // Addition
+                screen.setText("");
+            }
         }
         else if(event.getSource() == subtraction) {
-            previousValue = Float.parseFloat(screen.getText());
-            operation = 3; // Subtraction
-            screen.setText("");
+            if (screen.getText() == "") {
+                ;
+            } else {
+                previousValue = Float.parseFloat(screen.getText());
+                operation = 3; // Subtraction
+                screen.setText("");
+            }
         }
         else if(event.getSource() == multiplication) {
-            previousValue = Float.parseFloat(screen.getText());
-            operation = 4; // Multiplication
-            screen.setText("");
+            if (screen.getText() == "") {
+                ;
+            } else {
+                previousValue = Float.parseFloat(screen.getText());
+                operation = 4; // Multiplication
+                screen.setText("");
+            }
         }
         else if(event.getSource() == division) {
-            previousValue = Float.parseFloat(screen.getText());
-            operation = 5; // Division
-            screen.setText("");
+            if (screen.getText() == "") {
+                ;
+            } else {
+                previousValue = Float.parseFloat(screen.getText());
+                operation = 5; // Division
+                screen.setText("");
+            }
         }
         else if(event.getSource() == percent) {
-            previousValue = Float.parseFloat(screen.getText());
-            operation = 6; // Percentage
-            screen.setText("");
+            if (screen.getText() == "") {
+                ;
+            } else {
+                previousValue = Float.parseFloat(screen.getText());
+                operation = 6; // Percentage
+                screen.setText("");
+            }
         }
         else if(event.getSource() == equal) {
-            Float currentValue = Float.parseFloat(screen.getText());
-            switch(operation) {
-                case 1:
-                    previousValue = 0f;
-                case 2: // Addition
-                    addition(previousValue, currentValue);
-                    break;
-                case 3: // Subtraction
-                    subtraction(previousValue, currentValue);
-                    break;
-                case 4: // Multiplication
-                    multiplication(previousValue, currentValue);
-                    break;
-                case 5: // Division
-                    division(previousValue, currentValue);
-                    break;
-                case 6:
-                    percentage(previousValue, currentValue);
-                    break;
+            if (screen.getText() == "") {
+                ;
+            } else {
+                Float currentValue = Float.parseFloat(screen.getText());
+                switch(operation) {
+                    case 1:
+                        previousValue = 0f;
+                    case 2: // Addition
+                        addition(previousValue, currentValue);
+                        break;
+                    case 3: // Subtraction
+                        subtraction(previousValue, currentValue);
+                        break;
+                    case 4: // Multiplication
+                        multiplication(previousValue, currentValue);
+                        break;
+                    case 5: // Division
+                        division(previousValue, currentValue);
+                        break;
+                    case 6: // Percentage
+                        percentage(previousValue, currentValue);
+                        break;
+                }
             }
         }
     }
