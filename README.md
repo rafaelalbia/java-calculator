@@ -23,3 +23,9 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
 </ul>
 
 <h2>Coming Soon</h2>
+
+<ul>
+    <li>Calculation of temperature</li>
+    <>
+    <>
+</ul>
