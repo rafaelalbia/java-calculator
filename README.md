@@ -30,4 +30,5 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
     <li>Scientific calculation</li>
     <li>Changing themes</li>
     <li>Calculation of measures</li>
+    <li>Fiat currency conversion</li>
 </ul>
