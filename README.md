@@ -12,3 +12,7 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
 
 <h2>Features</h2>
 
+<h3>Buttons</h3>
+
+<ul>
+</ul>
