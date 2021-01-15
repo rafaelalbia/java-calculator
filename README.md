@@ -16,4 +16,6 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
 
 <ul>
     <li>Addition</li>
+    <li>Subtraction<li>
+    <li>Multiplication</li>
 </ul>
