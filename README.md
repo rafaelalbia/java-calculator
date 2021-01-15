@@ -29,4 +29,5 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
     <li>Financial calculation</li>
     <li>Scientific calculation</li>
     <li>Changing themes</li>
+    <li>Calculation of measures</li>
 </ul>
