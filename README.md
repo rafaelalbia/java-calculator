@@ -26,6 +26,6 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
 
 <ul>
     <li>Calculation of temperature</li>
-    <>
+    <li>Financial calculation</li>
     <>
 </ul>
