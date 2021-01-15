@@ -15,4 +15,5 @@ Made with: CSS3, Java, JavaFx and SceneBuilder.
 <h3>Buttons</h3>
 
 <ul>
+    <li>Addition</li>
 </ul>
