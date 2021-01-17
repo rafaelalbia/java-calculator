@@ -109,7 +109,7 @@ public class MainController {
                 ;
             } else {
                 previousValue = Float.parseFloat(screen.getText());
-                operation = 2; // Addition
+                operation = 2;
                 screen.setText("");
             }
         }
@@ -120,34 +120,40 @@ public class MainController {
                 ;
             } else {
                 previousValue = Float.parseFloat(screen.getText());
-                operation = 3; // Subtraction
+                operation = 3;
                 screen.setText("");
             }
         }
+        // Key event '*', previousValue variable receives the screen variable
+        // Operation variable receives 4 (for switch-case) and clears screen variable
         else if(event.getSource() == multiplication) {
             if (screen.getText() == "") {
                 ;
             } else {
                 previousValue = Float.parseFloat(screen.getText());
-                operation = 4; // Multiplication
+                operation = 4;
                 screen.setText("");
             }
         }
+        // Key event '/', previousValue variable receives the screen variable
+        // Operation variable receives 5 (for switch-case) and clears screen variable
         else if(event.getSource() == division) {
             if (screen.getText() == "") {
                 ;
             } else {
                 previousValue = Float.parseFloat(screen.getText());
-                operation = 5; // Division
+                operation = 5;
                 screen.setText("");
             }
         }
+        // Key event '%', previousValue variable receives the screen variable
+        // Operation variable receives 6 (for switch-case) and clears screen variable
         else if(event.getSource() == percent) {
             if (screen.getText() == "") {
                 ;
             } else {
                 previousValue = Float.parseFloat(screen.getText());
-                operation = 6; // Percentage
+                operation = 6;
                 screen.setText("");
             }
         }
