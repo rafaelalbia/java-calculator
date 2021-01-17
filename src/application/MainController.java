@@ -102,7 +102,7 @@ public class MainController {
                 screen.setText(digits);
             }
         }
-        // Key event '+', previousValue variable receives the screen variable
+        // For operators: +, -, *, / and %. previousValue variable receives the screen variable
         // Operation variable receives 2 (for switch-case) and clears screen variable
         else if(event.getSource() == addition) {
             if (screen.getText() == "") {
@@ -113,7 +113,6 @@ public class MainController {
                 screen.setText("");
             }
         }
-        // Key event '-', previousValue variable receives the screen variable
         // Operation variable receives 3 (for switch-case) and clears screen variable
         else if(event.getSource() == subtraction) {
             if (screen.getText() == "") {
@@ -124,7 +123,6 @@ public class MainController {
                 screen.setText("");
             }
         }
-        // Key event '*', previousValue variable receives the screen variable
         // Operation variable receives 4 (for switch-case) and clears screen variable
         else if(event.getSource() == multiplication) {
             if (screen.getText() == "") {
@@ -135,7 +133,6 @@ public class MainController {
                 screen.setText("");
             }
         }
-        // Key event '/', previousValue variable receives the screen variable
         // Operation variable receives 5 (for switch-case) and clears screen variable
         else if(event.getSource() == division) {
             if (screen.getText() == "") {
@@ -146,7 +143,6 @@ public class MainController {
                 screen.setText("");
             }
         }
-        // Key event '%', previousValue variable receives the screen variable
         // Operation variable receives 6 (for switch-case) and clears screen variable
         else if(event.getSource() == percent) {
             if (screen.getText() == "") {
