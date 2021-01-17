@@ -153,6 +153,8 @@ public class MainController {
                 screen.setText("");
             }
         }
+        // Key equal '=', currentValue variable receives the screen variable
+        // According to the value of the operation variable, the calculation is made with variables: previousValue and currentValue
         else if(event.getSource() == equal) {
             if (screen.getText() == "") {
                 ;
@@ -161,19 +163,19 @@ public class MainController {
                 switch(operation) {
                     case 1:
                         previousValue = 0f;
-                    case 2: // Addition
+                    case 2: // Value of operation variable regarding Addition
                         addition(previousValue, currentValue);
                         break;
-                    case 3: // Subtraction
+                    case 3: // Value of operation variable regarding Subtraction
                         subtraction(previousValue, currentValue);
                         break;
-                    case 4: // Multiplication
+                    case 4: // Value of operation variable regarding Multiplication
                         multiplication(previousValue, currentValue);
                         break;
-                    case 5: // Division
+                    case 5: // Value of operation variable regarding Division
                         division(previousValue, currentValue);
                         break;
-                    case 6: // Percentage
+                    case 6: // Value of operation variable regarding Percentage
                         percentage(previousValue, currentValue);
                         break;
                 }
