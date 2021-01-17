@@ -43,19 +43,19 @@ public class MainController {
         if(event.getSource() == zero) {
             screen.setText(screen.getText() + "0");
         }
-
+        // Key equal 1, and add 1 to screen variable
         else if(event.getSource() == one) {
             screen.setText(screen.getText() + "1");
         }
-
+        // Key equal 2, and add 2 to screen variable
         else if(event.getSource() == two) {
             screen.setText(screen.getText() + "2");
         }
-
+        // Key equal 3, and add 3 to screen variable
         else if(event.getSource() == three) {
             screen.setText(screen.getText() + "3");
         }
-
+        // Key equal 4, and add 4 to screen variable
         else if(event.getSource() == four) {
             screen.setText(screen.getText() + "4");
         }
@@ -79,7 +79,7 @@ public class MainController {
         else if(event.getSource() == nine) {
             screen.setText(screen.getText() + "9");
         }
-        
+
         else if(event.getSource() == dot) {
             if (screen.getText() == "" || screen.getText().indexOf(".") != -1) {
                 ;
