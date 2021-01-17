@@ -59,23 +59,23 @@ public class MainController {
         else if(event.getSource() == four) {
             screen.setText(screen.getText() + "4");
         }
-
+        // Key equal 5, and add 5 to screen variable
         else if(event.getSource() == five) {
             screen.setText(screen.getText() + "5");
         }
-
+        // Key equal 6, and add 6 to screen variable
         else if(event.getSource() == six) {
             screen.setText(screen.getText() + "6");
         }
-
+        // Key equal 7, and add 7 to screen variable
         else if(event.getSource() == seven) {
             screen.setText(screen.getText() + "7");
         }
-
+        // Key equal 8, and add 8 to screen variable
         else if(event.getSource() == eight) {
             screen.setText(screen.getText() + "8");
         }
-
+        
         else if(event.getSource() == nine) {
             screen.setText(screen.getText() + "9");
         }
