@@ -1,5 +1,7 @@
 package application;
 
+import java.awt.*;
+import java.awt.event.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -40,7 +42,7 @@ public class MainController {
     private void handleButtonAction(ActionEvent event) {
         // Key actions events, key event equal to X (button value), and adding X to the screen variable)
         // Key equal '0', and add '0' to screen variable
-        if (event.getSource() == zero) {
+        if (event.getSource() == zero){
             screen.setText(screen.getText() + "0");
         }
         // Key equal '1', and add '1' to screen variable
