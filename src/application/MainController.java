@@ -97,8 +97,7 @@ public class MainController {
                 ;
             } else {
                 String digits = String.valueOf(screen.getText());
-                int lastIndex = digits.length() - 1;
-                digits = digits.replaceFirst(String.valueOf(digits.charAt(lastIndex)), "");
+                digits = digits.substring(0, digits.length() - 1);
                 screen.setText(digits);
             }
         }
