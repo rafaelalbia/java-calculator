@@ -40,47 +40,47 @@ public class MainController {
     private void handleButtonAction(ActionEvent event) {
         // Key actions events, key event equal to X (button value), and adding X to the screen variable)
         // Key equal '0', and add '0' to screen variable
-        if(event.getSource() == zero) {
+        if (event.getSource() == zero) {
             screen.setText(screen.getText() + "0");
         }
         // Key equal '1', and add '1' to screen variable
-        else if(event.getSource() == one) {
+        else if (event.getSource() == one) {
             screen.setText(screen.getText() + "1");
         }
         // Key equal '2', and add '2' to screen variable
-        else if(event.getSource() == two) {
+        else if (event.getSource() == two) {
             screen.setText(screen.getText() + "2");
         }
         // Key equal '3', and add '3' to screen variable
-        else if(event.getSource() == three) {
+        else if (event.getSource() == three) {
             screen.setText(screen.getText() + "3");
         }
         // Key equal '4', and add '4' to screen variable
-        else if(event.getSource() == four) {
+        else if (event.getSource() == four) {
             screen.setText(screen.getText() + "4");
         }
         // Key equal '5', and add '5' to screen variable
-        else if(event.getSource() == five) {
+        else if (event.getSource() == five) {
             screen.setText(screen.getText() + "5");
         }
         // Key equal '6', and add '6' to screen variable
-        else if(event.getSource() == six) {
+        else if (event.getSource() == six) {
             screen.setText(screen.getText() + "6");
         }
         // Key equal '7', and add '7' to screen variable
-        else if(event.getSource() == seven) {
+        else if (event.getSource() == seven) {
             screen.setText(screen.getText() + "7");
         }
         // Key equal '8', and add '8' to screen variable
-        else if(event.getSource() == eight) {
+        else if (event.getSource() == eight) {
             screen.setText(screen.getText() + "8");
         }
         // Key equal '9', and add '9' to screen variable
-        else if(event.getSource() == nine) {
+        else if (event.getSource() == nine) {
             screen.setText(screen.getText() + "9");
         }
         // Key equal '.', and add '.' to screen variable with specific changes
-        else if(event.getSource() == dot) {
+        else if (event.getSource() == dot) {
             if (screen.getText() == "" || screen.getText().indexOf(".") != -1) {
                 ;
             } else {
@@ -88,11 +88,11 @@ public class MainController {
             }
         }
         // Key equal 'C', clear screen variable
-        else if(event.getSource() == clear) {
+        else if (event.getSource() == clear) {
             screen.setText("");
         }
         // Key equal '<-', clears the last character of the screen variable
-        else if(event.getSource() == backstep) {
+        else if (event.getSource() == backstep) {
             if (screen.getText() == "" || screen.getText().length() == 0)  {
                 ;
             } else {
@@ -103,7 +103,7 @@ public class MainController {
         }
         // For operators: +, -, *, / and %. previousValue variable receives the screen variable
         // Operation variable receives 2 (for switch-case) and clears screen variable
-        else if(event.getSource() == addition) {
+        else if (event.getSource() == addition) {
             if (screen.getText() == "") {
                 ;
             } else {
@@ -113,7 +113,7 @@ public class MainController {
             }
         }
         // Operation variable receives 3 (for switch-case) and clears screen variable
-        else if(event.getSource() == subtraction) {
+        else if (event.getSource() == subtraction) {
             if (screen.getText() == "") {
                 ;
             } else {
@@ -123,7 +123,7 @@ public class MainController {
             }
         }
         // Operation variable receives 4 (for switch-case) and clears screen variable
-        else if(event.getSource() == multiplication) {
+        else if (event.getSource() == multiplication) {
             if (screen.getText() == "") {
                 ;
             } else {
@@ -133,7 +133,7 @@ public class MainController {
             }
         }
         // Operation variable receives 5 (for switch-case) and clears screen variable
-        else if(event.getSource() == division) {
+        else if (event.getSource() == division) {
             if (screen.getText() == "") {
                 ;
             } else {
@@ -143,7 +143,7 @@ public class MainController {
             }
         }
         // Operation variable receives 6 (for switch-case) and clears screen variable
-        else if(event.getSource() == percent) {
+        else if (event.getSource() == percent) {
             if (screen.getText() == "") {
                 ;
             } else {
@@ -154,7 +154,7 @@ public class MainController {
         }
         // Key equal '=', currentValue variable receives the screen variable
         // According to the value of the operation variable, the calculation is made with variables: previousValue and currentValue
-        else if(event.getSource() == equal) {
+        else if (event.getSource() == equal) {
             if (screen.getText() == "") {
                 ;
             } else {
