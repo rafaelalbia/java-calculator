@@ -182,7 +182,8 @@ public class MainController {
         }
     }
     
-    private void verificationValue(Float answerVerification) {
+    // Function that checks whether the result can be converted to an integer and remains the same
+     private void verificationValue(Float answerVerification) {
         if (answerVerification == answerVerification.intValue()) {
             screen.setText(String.valueOf(answerVerification.intValue()));
         }
@@ -192,21 +193,25 @@ public class MainController {
         operation = 1;
     }
 
+    // Function that performs addition calculation and calls the result verification function
     private void addition(Float firstOperand, Float secondOperand) {
         Float answer = firstOperand + secondOperand;
         verificationValue(answer);
     }
 
+    // Function that performs subtraction calculation and calls the result verification function
     private void subtraction(Float firstOperand, Float secondOperand) {
         Float answer = firstOperand - secondOperand;
         verificationValue(answer);
     }
 
+    // Function that performs multiplication calculation and calls the result verification function
     private void multiplication(Float firstOperand, Float secondOperand) {
         Float answer = firstOperand * secondOperand;
         verificationValue(answer);
     }
 
+    // Function that performs division calculation and calls the result verification function
     private void division(Float firstOperand, Float secondOperand) {
         Float answer = 0f;
         try {
@@ -217,6 +222,7 @@ public class MainController {
         verificationValue(answer);
     }
 
+    // Function that performs percentage calculation and calls the result verification function
     private void percentage(Float firstOperand, Float secondOperand) {
         Float answer = (firstOperand * secondOperand) / 100;
         verificationValue(answer);
