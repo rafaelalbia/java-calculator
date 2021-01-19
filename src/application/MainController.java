@@ -1,8 +1,8 @@
 package application;
 
-import java.awt.*;
-import java.awt.event.*;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,6 +16,9 @@ public class MainController {
 
     Float previousValue = 0f;
     int operation = 1;
+    static String key;
+    List<String> numbers = Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
+            "nine");
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
@@ -40,9 +43,11 @@ public class MainController {
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
-        // Key actions events, key event equal to X (button value), and adding X to the screen variable)
+        // Key actions events, key event equal to X (button value), and adding X to the
+        // screen variable)
         // Key equal '0', and add '0' to screen variable
-        if (event.getSource() == zero){
+
+        if (event.getSource() == zero) {
             screen.setText(screen.getText() + "0");
         }
         // Key equal '1', and add '1' to screen variable
@@ -95,7 +100,7 @@ public class MainController {
         }
         // Key equal '<-', clears the last character of the screen variable
         else if (event.getSource() == backstep) {
-            if (screen.getText() == "" || screen.getText().length() == 0)  {
+            if (screen.getText() == "" || screen.getText().length() == 0) {
                 ;
             } else {
                 String digits = String.valueOf(screen.getText());
@@ -103,7 +108,8 @@ public class MainController {
                 screen.setText(digits);
             }
         }
-        // For operators: +, -, *, / and %. previousValue variable receives the screen variable
+        // For operators: +, -, *, / and %. previousValue variable receives the screen
+        // variable
         // Operation variable receives 2 (for switch-case) and clears screen variable
         else if (event.getSource() == addition) {
             if (screen.getText() == "") {
@@ -155,13 +161,14 @@ public class MainController {
             }
         }
         // Key equal '=', currentValue variable receives the screen variable
-        // According to the value of the operation variable, the calculation is made with variables: previousValue and currentValue
+        // According to the value of the operation variable, the calculation is made
+        // with variables: previousValue and currentValue
         else if (event.getSource() == equal) {
             if (screen.getText() == "") {
                 ;
             } else {
                 Float currentValue = Float.parseFloat(screen.getText());
-                switch(operation) {
+                switch (operation) {
                     case 1:
                         previousValue = 0f;
                     case 2: // Value of operation variable regarding Addition
@@ -183,9 +190,9 @@ public class MainController {
             }
         }
     }
-    
+
     // Function that checks whether the result can be converted to an integer and remains the same
-     private void verificationValue(Float answerVerification) {
+    private void verificationValue(Float answerVerification) {
         if (answerVerification == answerVerification.intValue()) {
             screen.setText(String.valueOf(answerVerification.intValue()));
         }
