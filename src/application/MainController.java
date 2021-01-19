@@ -1,8 +1,6 @@
 package application;
 
 import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,9 +14,6 @@ public class MainController {
 
     Float previousValue = 0f;
     int operation = 1;
-    static String key;
-    List<String> numbers = Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
-            "nine");
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
@@ -43,10 +38,8 @@ public class MainController {
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
-        // Key actions events, key event equal to X (button value), and adding X to the
-        // screen variable)
+        // Key actions events, key event equal to X (button value), and adding X to the screen variable
         // Key equal '0', and add '0' to screen variable
-
         if (event.getSource() == zero) {
             screen.setText(screen.getText() + "0");
         }
@@ -108,8 +101,7 @@ public class MainController {
                 screen.setText(digits);
             }
         }
-        // For operators: +, -, *, / and %. previousValue variable receives the screen
-        // variable
+        // For operators: +, -, *, / and %. previousValue variable receives the screen variable
         // Operation variable receives 2 (for switch-case) and clears screen variable
         else if (event.getSource() == addition) {
             if (screen.getText() == "") {
