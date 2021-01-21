@@ -33,7 +33,7 @@ public class MainController {
     @FXML // These variables are a part of all the buttons in the panel
     private Button zero, one, two, three, four, five, six, seven, eight, nine, dot;
 
-    @FXML // 
+    @FXML // These variables are the rest of all the buttons on the panel
     private Button percent, division, multiplication, subtraction, addition, equal, backstep, clear;
 
     @FXML
