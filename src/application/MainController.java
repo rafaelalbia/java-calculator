@@ -42,7 +42,7 @@ public class MainController {
     @FXML
     private void handleButtonAction(ActionEvent event) {
         // Key actions events, key event equal to X (button value), and adding X to the screen variable
-        // Key equal '0', and add '0' to screen variable
+        // Each button corresponds to a number, after selecting a button the corresponding value is printed on the screen
         if (event.getSource() == zero) {
             screen.setText(screen.getText() + "0");
         }
