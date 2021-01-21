@@ -30,13 +30,13 @@ public class MainController {
     @FXML // This variable is the information screen of the program
     private Label screen;
 
-    @FXML // This variable is the panel where the buttons will be
+    @FXML
     private Pane keys;
 
-    @FXML // These variables are a part of all the buttons in the panel
+    @FXML
     private Button zero, one, two, three, four, five, six, seven, eight, nine, dot;
 
-    @FXML // These variables are the rest of all the buttons on the panel
+    @FXML
     private Button percent, division, multiplication, subtraction, addition, equal, backstep, clear;
 
     @FXML
