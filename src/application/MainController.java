@@ -21,19 +21,19 @@ public class MainController {
     @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
 
-    @FXML
+    @FXML // This variable is the whole window of the program
     private AnchorPane window;
 
-    @FXML
+    @FXML // This variable is the information screen of the program
     private Label screen;
 
-    @FXML
+    @FXML // This variable is the panel where the buttons will be
     private Pane keys;
 
-    @FXML
+    @FXML // These variables are a part of all the buttons in the panel
     private Button zero, one, two, three, four, five, six, seven, eight, nine, dot;
 
-    @FXML
+    @FXML // 
     private Button percent, division, multiplication, subtraction, addition, equal, backstep, clear;
 
     @FXML
