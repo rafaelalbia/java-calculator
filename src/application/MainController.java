@@ -12,7 +12,10 @@ import javafx.scene.layout.Pane;
 
 public class MainController {
 
+    // After selecting an operation, the variable receives the current value to save and insert a new one to perform the operation
     Float previousValue = 0f;
+
+    // The variable will change according to which option will be performed
     int operation = 1;
 
     @FXML // ResourceBundle that was given to the FXMLLoader
