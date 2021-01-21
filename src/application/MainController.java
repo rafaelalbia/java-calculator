@@ -45,42 +45,34 @@ public class MainController {
         // Each button corresponds to a number, after selecting a button the corresponding value is printed on the screen
         if (event.getSource() == zero) {
             screen.setText(screen.getText() + "0");
-        } else if (event.getSource() == one) {
+        }
+        else if (event.getSource() == one) {
             screen.setText(screen.getText() + "1");
         }
-        
         else if (event.getSource() == two) {
             screen.setText(screen.getText() + "2");
         }
-        
         else if (event.getSource() == three) {
             screen.setText(screen.getText() + "3");
         }
-        
         else if (event.getSource() == four) {
             screen.setText(screen.getText() + "4");
         }
-        
         else if (event.getSource() == five) {
             screen.setText(screen.getText() + "5");
         }
-        
         else if (event.getSource() == six) {
             screen.setText(screen.getText() + "6");
         }
-        
         else if (event.getSource() == seven) {
             screen.setText(screen.getText() + "7");
         }
-        
         else if (event.getSource() == eight) {
             screen.setText(screen.getText() + "8");
         }
-        
         else if (event.getSource() == nine) {
             screen.setText(screen.getText() + "9");
         }
-        
         else if (event.getSource() == dot) {
             if (screen.getText() == "" || screen.getText().indexOf(".") != -1) {
                 ;
