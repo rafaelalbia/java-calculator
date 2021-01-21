@@ -24,10 +24,10 @@ public class MainController {
     @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
 
-    @FXML // This variable is the whole window of the program
+    @FXML
     private AnchorPane window;
 
-    @FXML // This variable is the information screen of the program
+    @FXML
     private Label screen;
 
     @FXML
